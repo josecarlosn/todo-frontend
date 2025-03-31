@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Task({id,title, description,status, date_of_creation}) {
+function Task({id,title, description,status, creation_date}) {
   return (
     <>
-        <div key={id}>{title} - {description} - {status} - {date_of_creation}</div>
+        <div id={id}>{title} - {description} - {status} - {creation_date}</div>
         <button>Update</button><button>Delete</button>
     </>
   )
